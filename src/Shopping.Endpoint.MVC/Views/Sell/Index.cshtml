@@ -1,0 +1,10 @@
+﻿@model List<Shopping.Endpoint.ViewModel.FactorListModel>
+@{
+    ViewBag.Title = "Index";
+}
+
+@foreach (var item in Model)
+{
+    <h1>@item.CustomerName</h1>
+}
+
