@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Shopping.Endpoint.ViewModel
+namespace Shopping.Endpoint.MVC.Models
 {
     public class FactorListModel
     {
         public long Id { get; set; }
+
 
         public string CustomerName { get; set; }
 

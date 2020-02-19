@@ -12,7 +12,7 @@ using Shopping.Domain.Entities.Entities;
 namespace Shopping.Domain.Contract.Concrete
 {
 
-    public class GenericRepository<TEntity> : IBaseRepository<TEntity> where TEntity : BaseEntity
+    public class GenericRepository<TEntity> : IBaseRepository<TEntity> where TEntity : class
     {
         internal ShoppingDataContext context;
         internal DbSet<TEntity> dbSet;

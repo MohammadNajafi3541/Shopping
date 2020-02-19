@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 using Shopping.Endpoint.MVC.App_Start;
+using Shopping.Endpoint.MVC.Infrastructures.Mapping;
 using Shopping.Utilities.Mapping;
 
 namespace Shopping.Endpoint.MVC

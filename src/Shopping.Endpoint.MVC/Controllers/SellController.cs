@@ -1,7 +1,9 @@
-﻿using Shopping.Application.Services.Interfaces;
+﻿using Microsoft.Reporting.WebForms;
+using Shopping.Application.Services.Interfaces;
 using Shopping.Domain.Entities.Entities;
-using Shopping.Endpoint.ViewModel;
-using Shopping.Utilities.Mapping.Base;
+using Shopping.Endpoint.MVC.Infrastructures.Reports;
+using Shopping.Endpoint.MVC.Models;
+using Shopping.Utilities.Mapping.Base; 
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,7 +25,9 @@ namespace Shopping.Endpoint.MVC.Controllers
         // GET: Sell
         public ActionResult Index()
         {
-            var list = factorService.GetAll().Select(x => mapperFacade.Map<Factor, FactorListModel>(x)).ToList();
+            var list = factorService.GetAll()
+                .Select(x => mapperFacade.Map<Factor, FactorListModel>(x))
+                .ToList();
 
             return View(list);
         }
@@ -52,6 +56,17 @@ namespace Shopping.Endpoint.MVC.Controllers
 
 
             return View(model);
+        }
+
+
+        [HttpGet]
+        public ActionResult FactorReport(DateTime? fromDate,DateTime? toDate)
+        {
+            var report=ReportUtilities.LoadReport("FactorFromDateToDateReport", 
+                new ReportParameter("FromDate", fromDate.ToString()),
+                new ReportParameter("ToDate", toDate.ToString()));
+
+            return View(report);
         }
     }
 }

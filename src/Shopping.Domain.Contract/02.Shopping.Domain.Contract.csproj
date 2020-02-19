@@ -53,9 +53,6 @@
   <ItemGroup>
     <Compile Include="Abstract\IBaseRepository.cs" />
     <Compile Include="Concrete\GenericRepository.cs" />
-    <Compile Include="DataContext\ShoppingDataContext.cs" />
-    <Compile Include="Extentions\ChangeTrackerExtensions.cs" />
-    <Compile Include="Mapping\GoodMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -63,6 +60,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Shopping.Data.EF\03.Shopping.Data.EF.csproj">
+      <Project>{EE6E5EF5-0DA1-4314-BB3D-6D86C426C5C9}</Project>
+      <Name>03.Shopping.Data.EF</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Shopping.Domain.Entities\01.Shopping.Domain.Entities.csproj">
       <Project>{7C340053-41FF-4C5F-9285-63AC3F46E7FD}</Project>
       <Name>01.Shopping.Domain.Entities</Name>

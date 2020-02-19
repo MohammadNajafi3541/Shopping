@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Shopping.Endpoint.ViewModel.Validations
+namespace Shopping.Endpoint.MVC.Models.Validations
 {
-   public class SellModelValidation : AbstractValidator<SellModel>
+    public class SellModelValidation : AbstractValidator<SellModel>
     {
         public SellModelValidation()
         {

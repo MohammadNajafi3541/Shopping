@@ -9,15 +9,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B8FF165F-279
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.Shopping.Domain.Entities", "src\Shopping.Domain.Entities\01.Shopping.Domain.Entities.csproj", "{7C340053-41FF-4C5F-9285-63AC3F46E7FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.Shopping.Utilities", "src\Shopping.Utilities\06.Shopping.Utilities.csproj", "{5850071A-99A6-43B3-A017-EA7D0D8903A7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.Shopping.Application.Services", "src\Shopping.Application.Services\04.Shopping.Application.Services.csproj", "{E2165D0D-A651-49FD-93ED-C016DDA735FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.Shopping.Application.Services", "src\Shopping.Application.Services\03.Shopping.Application.Services.csproj", "{E2165D0D-A651-49FD-93ED-C016DDA735FD}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.Shopping.Endpoint.MVC", "src\Shopping.Endpoint.MVC\04.Shopping.Endpoint.MVC.csproj", "{CA1696C0-709D-44A3-97B9-B9B7E61A1207}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.Shopping.Endpoint.ViewModel", "src\Shopping.Endpoint.ViewModel\05.Shopping.Endpoint.ViewModel.csproj", "{5D11265A-939C-4B91-8744-CE82E075B5B5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.Shopping.Endpoint.MVC", "src\Shopping.Endpoint.MVC\05.Shopping.Endpoint.MVC.csproj", "{CA1696C0-709D-44A3-97B9-B9B7E61A1207}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{D6AE7530-DD82-47EE-9CAB-ED5062C6CA8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.Shopping.Data.EF", "src\Shopping.Data.EF\03.Shopping.Data.EF.csproj", "{EE6E5EF5-0DA1-4314-BB3D-6D86C426C5C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shopping.Application.Services.Test", "test\Shopping.Application.Services.Test\Shopping.Application.Services.Test.csproj", "{BB77BFCA-75F9-4E04-ACE3-EE87A924CE11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shopping.Endpoint.MVC.Test", "test\Shopping.Endpoint.MVC.Test\Shopping.Endpoint.MVC.Test.csproj", "{B79128A5-1C70-4361-AE94-A9CAF3105F3D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,10 +35,6 @@ Global
 		{7C340053-41FF-4C5F-9285-63AC3F46E7FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C340053-41FF-4C5F-9285-63AC3F46E7FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C340053-41FF-4C5F-9285-63AC3F46E7FD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5850071A-99A6-43B3-A017-EA7D0D8903A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5850071A-99A6-43B3-A017-EA7D0D8903A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5850071A-99A6-43B3-A017-EA7D0D8903A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5850071A-99A6-43B3-A017-EA7D0D8903A7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E2165D0D-A651-49FD-93ED-C016DDA735FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E2165D0D-A651-49FD-93ED-C016DDA735FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2165D0D-A651-49FD-93ED-C016DDA735FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -45,10 +43,18 @@ Global
 		{CA1696C0-709D-44A3-97B9-B9B7E61A1207}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA1696C0-709D-44A3-97B9-B9B7E61A1207}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA1696C0-709D-44A3-97B9-B9B7E61A1207}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5D11265A-939C-4B91-8744-CE82E075B5B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5D11265A-939C-4B91-8744-CE82E075B5B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5D11265A-939C-4B91-8744-CE82E075B5B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5D11265A-939C-4B91-8744-CE82E075B5B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE6E5EF5-0DA1-4314-BB3D-6D86C426C5C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE6E5EF5-0DA1-4314-BB3D-6D86C426C5C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE6E5EF5-0DA1-4314-BB3D-6D86C426C5C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE6E5EF5-0DA1-4314-BB3D-6D86C426C5C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB77BFCA-75F9-4E04-ACE3-EE87A924CE11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB77BFCA-75F9-4E04-ACE3-EE87A924CE11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB77BFCA-75F9-4E04-ACE3-EE87A924CE11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB77BFCA-75F9-4E04-ACE3-EE87A924CE11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B79128A5-1C70-4361-AE94-A9CAF3105F3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B79128A5-1C70-4361-AE94-A9CAF3105F3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B79128A5-1C70-4361-AE94-A9CAF3105F3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B79128A5-1C70-4361-AE94-A9CAF3105F3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -56,10 +62,11 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{4AD62E7F-9173-470D-A0D4-A4BFE3F7814B} = {B8FF165F-2793-4675-AA44-456294523E6A}
 		{7C340053-41FF-4C5F-9285-63AC3F46E7FD} = {B8FF165F-2793-4675-AA44-456294523E6A}
-		{5850071A-99A6-43B3-A017-EA7D0D8903A7} = {B8FF165F-2793-4675-AA44-456294523E6A}
 		{E2165D0D-A651-49FD-93ED-C016DDA735FD} = {B8FF165F-2793-4675-AA44-456294523E6A}
 		{CA1696C0-709D-44A3-97B9-B9B7E61A1207} = {B8FF165F-2793-4675-AA44-456294523E6A}
-		{5D11265A-939C-4B91-8744-CE82E075B5B5} = {B8FF165F-2793-4675-AA44-456294523E6A}
+		{EE6E5EF5-0DA1-4314-BB3D-6D86C426C5C9} = {B8FF165F-2793-4675-AA44-456294523E6A}
+		{BB77BFCA-75F9-4E04-ACE3-EE87A924CE11} = {D6AE7530-DD82-47EE-9CAB-ED5062C6CA8B}
+		{B79128A5-1C70-4361-AE94-A9CAF3105F3D} = {D6AE7530-DD82-47EE-9CAB-ED5062C6CA8B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6B16B81F-C92B-4271-BB4B-6D1FF657D6A0}

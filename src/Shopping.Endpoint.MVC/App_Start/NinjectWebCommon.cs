@@ -10,11 +10,11 @@ using Ninject.Web.Common.WebHost;
 using Shopping.Application.Services.Interfaces;
 using Shopping.Application.Services.Services;
 using Shopping.Domain.Contract.Abstract;
-using Shopping.Domain.Contract.Concrete; 
+using Shopping.Domain.Contract.Concrete;
 using Shopping.Domain.Entities.Entities;
 using Shopping.Endpoint.MVC.App_Start;
-using Shopping.Endpoint.ViewModel;
-using Shopping.Endpoint.ViewModel.Validations;
+using Shopping.Endpoint.MVC.Models;
+using Shopping.Endpoint.MVC.Models.Validations;
 using Shopping.Utilities.Mapping;
 using Shopping.Utilities.Mapping.Base;
 

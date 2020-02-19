@@ -52,13 +52,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataContext\ShoppingDataContext.cs" />
-    <Compile Include="Entities\Good.cs" />
-    <Compile Include="Repositories\GoodRepository.cs" />
+    <Compile Include="Extentions\ChangeTrackerExtensions.cs" />
+    <Compile Include="Mapping\GoodMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Shopping.Domain.Entities\01.Shopping.Domain.Entities.csproj">
+      <Project>{7C340053-41FF-4C5F-9285-63AC3F46E7FD}</Project>
+      <Name>01.Shopping.Domain.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

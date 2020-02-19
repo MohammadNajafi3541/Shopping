@@ -1,11 +1,6 @@
 ﻿using AutoMapper;
-using Shopping.Domain.Entities.Entities; 
-using Shopping.Endpoint.ViewModel;
-using System;
-using System.Collections.Generic;
+using Shopping.Domain.Entities.Entities;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Shopping.Utilities.Mapping
 {

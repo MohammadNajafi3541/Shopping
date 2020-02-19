@@ -8,7 +8,7 @@ using Shopping.Domain.Entities.Entities;
 
 namespace Shopping.Domain.Contract.Abstract
 {
-    public interface IBaseRepository<TEntity> where TEntity : BaseEntity
+    public interface IBaseRepository<TEntity> where TEntity : class
     {
         IEnumerable<TEntity> GetAll(int page = 0, int pagesize = 0, bool asNoTracking = false,
             Expression<Func<TEntity, bool>> filter = null,
